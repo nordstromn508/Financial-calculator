@@ -2,7 +2,7 @@ import pandas as pd
 import argparse
 import sys
 
-def preprocess_bank_statements(input_file, output_file='bank_statements_processed.csv'):
+def preprocess_bank_statements(input_file="bank_statements_raw.csv", output_file='bank_statements_processed.csv'):
     """
     Preprocess bank statement CSV by removing specified columns.
     
@@ -45,11 +45,4 @@ def preprocess_bank_statements(input_file, output_file='bank_statements_processe
         sys.exit(1)
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Preprocess bank statements CSV file")
-    parser.add_argument("input_file", help="Path to the input CSV file")
-    parser.add_argument("-o", "--output", default="bank_statements_processed.csv",
-                        help="Path for the output processed CSV file (default: bank_statements_processed.csv)")
-    
-    args = parser.parse_args()
-    
-    preprocess_bank_statements(args.input_file, args.output)
+    preprocess_bank_statements()
