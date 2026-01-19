@@ -205,3 +205,5 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+/bank_statements_processed.csv
+/bank_statements.csv
