@@ -6,7 +6,7 @@ def run_preprocessing():
     """Run the preprocessing script to clean the CSV file"""
     print("Running preprocessing...")
     try:
-        result = subprocess.run([sys.executable, 'preprocess_csv.py'], 
+        result = subprocess.run([sys.executable, 'preprocess.py'], 
                                 capture_output=True, text=True, check=True)
         print(result.stdout)
         if result.stderr:

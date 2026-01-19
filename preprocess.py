@@ -11,8 +11,8 @@ def preprocess_bank_statements(input_file="bank_statements_raw.csv", output_file
         output_file (str): Path for the output processed CSV file
     """
     try:
-        # Read the CSV file
-        df = pd.read_csv(input_file)
+        # Read the CSV file with error handling for bad lines
+        df = pd.read_csv(input_file, on_bad_lines='skip')
         
         # Define columns to remove
         columns_to_remove = ['Bank RTN', 'Account Number', 'Check Number', 'Account Running Balance']
