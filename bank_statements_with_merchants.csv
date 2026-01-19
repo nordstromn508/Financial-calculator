@@ -1,8 +1,0 @@
-Date,Transaction Type,Description,Debit,Credit,Merchant
-2023-08-07,DEBIT,Grocery Store,50.0,,Grocery
-2023-08-08,CREDIT,Salary,,2000.0,Salary
-2023-08-09,DEBIT,Rent Payment,1000.0,,Other
-2023-08-10,DEBIT,Utilities,150.0,,Other
-2023-08-11,DEBIT,Dining Out,75.5,,Restaurant
-2023-08-12,CREDIT,Freelance Work,,500.0,Salary
-2023-08-13,DEBIT,Online Shopping,120.0,,Other
